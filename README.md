@@ -1,8 +1,8 @@
-# ✈️ Viajes Delmiro
+# Viajes Delmiro
 
 Landing page desarrollada como práctica de HTML y CSS.
 
-## 📌 Descripción
+## Descripción
 
 Página web con temática fija: una agencia de viajes ficticia cuya propuesta es:
 
@@ -32,7 +32,7 @@ El objetivo es crear una web sencilla, visual y bien estructurada.
 * Uso de CSS Grid
 * Diseño responsive básico
 
-## 📁 Estructura
+## Estructura
 
 ```
 index.html
