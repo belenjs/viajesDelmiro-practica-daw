@@ -1,0 +1,54 @@
+:root {
+    /* Color principal para textos y otros elementos importantes */
+    --color-principal: #0B3C5D;
+
+    /* Color secundario (enlaces y detalles)*/
+    --color-secundario: #328CC1;
+
+    /* Color botones */
+    --color-btn: #FF7A00;
+
+    /* Color de fondo principal */
+    --color-bg: #F7F7F5;
+
+    /* Borde cómun para las esquinas de los elementos */
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-bg);
+    color: var(--color-principal);
+    padding-top: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+a {
+    color:var(--color-secundario);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
