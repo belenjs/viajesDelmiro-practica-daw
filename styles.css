@@ -296,6 +296,51 @@ a:hover {
     margin: 12px auto 0;
 }
 
+.info {
+    font-size: larger;
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info-text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.info-lista {
+    justify-items: center;
+}
+
+.info-lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: lista;
+}
+
+.info-lista li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 18px;
+}
+
+.info-lista li::before {
+    content: counter(lista);
+    counter-increment: lista;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--color-secundario);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
 
 .seccion-footer {
     background-color: var(--color-principal);
