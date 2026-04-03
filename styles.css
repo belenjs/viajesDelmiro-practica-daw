@@ -34,10 +34,6 @@ body {
     padding-bottom: 20px;
 }
 
-p {
-    margin-bottom: 12px;
-}
-
 h1, h2, h3 {
     margin-bottom: 10px;
     line-height: 1.2;
@@ -186,7 +182,6 @@ a:hover {
     margin-top: 60px;
     margin-bottom: 24px;
     margin-left: 24px;
-    /*color:var(--color-secundario);*/
 }
 
 .grid-tarjetas {
@@ -364,7 +359,6 @@ a:hover {
     animation-delay: 1s;
 }
 
-
 .contacto {
     max-width: 600px;
     margin: 0 auto; 
@@ -472,5 +466,185 @@ a:hover {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* PÓRTATTILES */
+@media (max-width: 1200px) {
+    .grid-tarjetas {
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    }
+
+    .hero-layout {
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .info {
+        margin: 40px;
+        gap: 24px;
+    }
+}
+
+/* TABLETS */
+@media (max-width: 980px) {
+    .topbar {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .marca {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .hero-card {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+
+    .grid-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+        margin: 40px 24px;
+        gap: 24px;
+    }
+
+    .info-text {
+        margin-top: 0;
+    }
+}
+
+/* MÓVILES */
+@media (max-width: 520px) {
+    body {
+        padding-top: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .topbar {
+        padding: 12px 16px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .hero-video {
+        height: 350px;
+    }
+
+    .hero-layout {
+        padding: 0 16px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    .destinos h2 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .grid-tarjetas {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .tarjeta {
+        margin: 0 16px;
+    }
+
+    .tarjeta img {
+        height: 200px;
+    }
+
+    .promocion {
+        padding: 16px;
+    }
+
+    .tarjeta-oferta img {
+        height: 220px;
+    }
+
+    .info {
+        margin: 32px 16px;
+    }
+
+    .info-lista li {
+        padding-left: 42px;
+    }
+
+    .contacto {
+        padding: 16px;
+    }
+
+    .form {
+        margin: 16px 0;
+    }
+
+    .btn-enviar {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .footer-icon {
+        flex-direction: column;
+        text-align: center;
     }
 }
